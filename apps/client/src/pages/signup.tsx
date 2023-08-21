@@ -4,7 +4,10 @@ import Signup from 'ui/components/Signup';
 const signup = () => {
   return (
     <div>
-      <Signup />
+      <Signup onClick = {(username, password) => {
+        alert(username);
+        alert(password);
+      }}/>
     </div>
   )
 }
